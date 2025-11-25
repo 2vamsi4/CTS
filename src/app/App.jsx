@@ -1,0 +1,15 @@
+// src/app/App.jsx
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import { CartProvider } from "../context/CartContext";
+import AppRoutes from "./routes";
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <CartProvider>
+        <AppRoutes />
+      </CartProvider>
+    </BrowserRouter>
+  );
+}
