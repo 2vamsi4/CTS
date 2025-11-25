@@ -1,0 +1,73 @@
+:root {
+    --bg: #0e0f13;
+    --surface: #13151b;
+    --card: #171a21;
+    --text: #ecf0ff;
+    --muted: #b8bed2;
+    --brand: #7c5cff;
+    --brand-2: #ff6b9f;
+    --accent: #3ee7a5;
+    --border: rgba(255, 255, 255, 0.08);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    --radius: 18px;
+}
+
+body {
+    font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial;
+    background: radial-gradient(1200px 700px at 10% -20%, rgba(124, 92, 255, 0.25), transparent 40%),
+        radial-gradient(1000px 600px at 90% 10%, rgba(255, 107, 159, 0.2), transparent 40%),
+        var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+.container {
+    width: min(1200px, 90%);
+    margin-inline: auto;
+}
+
+.muted {
+    color: var(--muted);
+}
+
+/* Decorative animated blobs */
+.bg-ornaments {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.blob {
+    position: absolute;
+    filter: blur(60px);
+    opacity: .35;
+    border-radius: 50%;
+    animation: float 14s ease-in-out infinite;
+}
+
+.blob--1 {
+    width: 420px;
+    height: 420px;
+    background: var(--brand);
+    top: -80px;
+    left: -80px;
+}
+
+.blob--2 {
+    width: 500px;
+    height: 500px;
+    background: var(--brand-2);
+    bottom: -140px;
+    right: -100px;
+    animation-duration: 18s;
+}
+
+.blob--3 {
+    width: 360px;
+    height: 360px;
+    background: var(--accent);
+    top: 40%;
+    left: -120px;
+    animation-duration: 22s;
+}

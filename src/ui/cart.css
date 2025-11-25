@@ -1,0 +1,146 @@
+/* Cart Icon */
+.cart-icon {
+    font-size: 26px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.cart-icon:hover {
+    transform: scale(1.1);
+}
+
+.cart-badge {
+    background: #e63946;
+    /* bright red */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Cart Page */
+.cart-page {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #f9f9fb;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cart-page h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0c0b0b;
+    font-weight: 600;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+}
+
+.cart-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    background: #fff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    border-radius: 8px;
+    margin-right: 20px;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.cart-item h4 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: #222;
+}
+
+.cart-item p {
+    margin: 5px 0 0;
+    color: #111111;
+    font-size: 14px;
+}
+
+.cart-item button {
+    background: #ff4d4d;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 8px 14px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.cart-item button:hover {
+    background: #e63946;
+    transform: scale(1.05);
+}
+
+.cart-page h3 {
+    text-align: right;
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #222;
+    border-top: 2px solid #eee;
+    padding-top: 10px;
+}
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.quantity-controls button {
+    padding: 4px 10px;
+    font-size: 16px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quantity-controls button:hover {
+    background: #0056b3;
+}
+
+.quantity-controls span {
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+    color:black;
+}

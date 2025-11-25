@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+}
+
+.gift-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gift-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 200px;
+}
+
+.gift-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
