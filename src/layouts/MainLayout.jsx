@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 
-import Header from "../components/Header";
+import Navbar from "../components/layout/Navbar";
 import Footer from "../components/Footer";
 
 export default function MainLayout() {
@@ -12,7 +12,7 @@ export default function MainLayout() {
 
   return (
     <div className="app">
-      <Header />
+      <Navbar />
       <main className="container">
         <Outlet />
       </main>
