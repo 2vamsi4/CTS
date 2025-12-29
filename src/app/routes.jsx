@@ -10,7 +10,7 @@ import Catalogue from "../components/Catalogue";
 import ContactUs from "../components/ContactUs";
 import CartPage from "../components/CartPage";
 import PaymentPage from "../components/PayementPage"
-
+import ProductPage from "../components/ProductPage";
 export default function AppRoutes() {
   return (
     <Routes>
@@ -21,6 +21,8 @@ export default function AppRoutes() {
         <Route path="/catalogue" element={<Catalogue />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/cart" element={<CartPage />} />
+                <Route path="/product/:id" element={<ProductPage />} />
+
       </Route>
 
       {/* Minimal layout (no header/footer) */}

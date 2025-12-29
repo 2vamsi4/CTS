@@ -1,0 +1,220 @@
+/* ================= PRODUCT PAGE ================= */
+
+.product-page {
+    padding: 40px 0;
+}
+
+.product-section {
+    display: flex;
+    gap: 48px;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.03),
+            rgba(255, 255, 255, 0.01));
+    border-radius: var(--radius);
+    padding: 32px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+}
+
+/* ================= GALLERY ================= */
+
+.product-gallery {
+    flex: 1;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: var(--radius);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.thumbnail-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.thumbnail {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 14px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+    opacity: 1;
+    border-color: var(--brand);
+    transform: translateY(-2px);
+}
+
+/* ================= INFO ================= */
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.rating {
+    color: var(--accent);
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.price {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.price .strike {
+    font-size: 15px;
+    margin-left: 10px;
+    color: var(--muted);
+    text-decoration: line-through;
+}
+
+.product-info input {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 18px 0;
+    border-radius: 14px;
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    outline: none;
+}
+
+.product-info input::placeholder {
+    color: var(--muted);
+}
+
+/* ================= ACTIONS ================= */
+
+.actions {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.actions button {
+    flex: 1;
+    padding: 14px;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Add to cart */
+.actions button:first-child {
+    background: transparent;
+    color: var(--brand);
+    border: 1px solid var(--brand);
+}
+
+.actions button:first-child:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 0 2px rgba(124, 92, 255, 0.25);
+}
+
+/* Buy now */
+.actions .buy {
+    background: linear-gradient(135deg,
+            var(--brand),
+            var(--brand-2));
+    color: #fff;
+}
+
+.actions .buy:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(124, 92, 255, 0.4);
+}
+
+/* ================= OFFERS ================= */
+
+.offers {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.offers li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: var(--muted);
+    position: relative;
+    padding-left: 20px;
+}
+
+.offers li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
+
+/* ================= TABS ================= */
+
+.tabs {
+    margin-top: 48px;
+    padding: 28px 32px;
+    background: var(--surface);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 32px;
+}
+
+.tab-buttons button {
+    background: none;
+    border: none;
+    font-size: 15px;
+    color: var(--muted);
+    cursor: pointer;
+    padding-bottom: 6px;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-buttons button:hover,
+.tab-buttons button.active {
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.tab-content {
+    margin-top: 18px;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+    .product-section {
+        flex-direction: column;
+    }
+
+    .thumbnail {
+        width: 64px;
+        height: 64px;
+    }
+}
