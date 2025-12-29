@@ -1,0 +1,59 @@
+/* GiftBanner.css */
+.gift-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 420px;
+  width: 100%;
+
+  padding: 40px;
+  box-sizing: border-box;
+
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Text Section */
+.banner-text {
+  width: 45%;
+  z-index: 2;
+}
+
+.banner-text h1 {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.banner-text p {
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+.banner-text button {
+  margin-top: 20px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  background: #00e5ff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 3D Canvas Section */
+.canvas-wrapper {
+  width: 55%;
+  height: 100%;
+  position: relative;
+}
+
+/* FORCE Canvas to fill the wrapper */
+.canvas-wrapper canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}

@@ -4,6 +4,7 @@ import GiftList from './GiftList.jsx';
 import { gifts as allGifts } from '../data/gifts.js'
 import fireIcon from "../assets/graph.png";
 import trendingIcon from "../assets/hashtag.png";
+import GiftBanner from './GiftBanner.jsx';
 
 
 
@@ -14,9 +15,11 @@ export default function Home() {
   const topSelling = useMemo(() => allGifts.slice(0, 5), []);
   const trending = useMemo(() => allGifts.slice(5, 10), []);
 
+
   return (
     <div>
       {/* Search bar */}
+      <GiftBanner />
       <section className="toolbar card">
         <div className="search">
           <input
