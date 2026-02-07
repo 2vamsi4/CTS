@@ -54,16 +54,26 @@
 .btn--primary {
     background: linear-gradient(90deg, var(--brand), var(--brand-2));
     color: white;
-    border: none;
-    padding: 14px 28px;
+    border: 3px solid transparent;
+    /* prevent layout jump */
+    padding: 10px 13px;
     font-size: 16px;
     font-weight: 600;
     border-radius: 12px;
     cursor: pointer;
-    transition: transform 0.2s ease, background 0.3s ease;
+
+    transition:
+        transform 0.25s ease,
+        background 0.5s ease,
+        color 0.3s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
 }
 
 .btn--primary:hover {
-    transform: translateY(-3px);
-    background: linear-gradient(135deg, #1aeb59, #060707);
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #f4f9f6, #f0f7f7);
+    color: #111;
+    border-color: #a53da5;
+    box-shadow: 0 10px 25px rgba(165, 61, 165, 0.35);
 }

@@ -1,0 +1,121 @@
+/* Container */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6366f1, #9333ea);
+}
+
+.login-container.dark {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+/* Glass Card */
+.login-card.glass {
+    width: 380px;
+    padding: 35px 30px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.35);
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+/* Dark toggle */
+.dark-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Logo */
+.login-logo {
+    height: 55px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+}
+
+/* Inputs */
+.login-card input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* Password toggle */
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper span {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    cursor: pointer;
+}
+
+/* Button */
+.login-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Spinner */
+.spinner {
+    width: 18px;
+    height: 18px;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    border-top: 3px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Messages */
+.message {
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.message.success {
+    background: rgba(16, 185, 129, 0.2);
+    color: #d1fae5;
+}
+
+.message.error {
+    background: rgba(239, 68, 68, 0.2);
+    color: #fee2e2;
+}
+
+/* Toggle text */
+.toggle-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.toggle-text span {
+    color: #a5b4fc;
+    cursor: pointer;
+    font-weight: 600;
+}

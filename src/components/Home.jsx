@@ -6,15 +6,12 @@ import fireIcon from "../assets/graph.png";
 import trendingIcon from "../assets/hashtag.png";
 import GiftBanner from './GiftBanner.jsx';
 
-
-
 export default function Home() {
-  const [search, setSearch] = useState('');
 
+  const [search, setSearch] = useState('')
   // Example: Just pick top 5 for each category for now
   const topSelling = useMemo(() => allGifts.slice(0, 5), []);
   const trending = useMemo(() => allGifts.slice(5, 10), []);
-
 
   return (
     <div>

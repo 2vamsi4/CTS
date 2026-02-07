@@ -12,11 +12,11 @@ export default function MainLayout() {
 
   return (
     <div className="app">
-      <Navbar />
+    <Navbar />
       <main className="container">
         <Outlet />
       </main>
-      <Footer />
+      <Footer/>
     </div>
   );
 }

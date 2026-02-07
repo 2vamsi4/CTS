@@ -10,8 +10,14 @@ export default function CartPage() {
   const totalAmount = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   const handleCheckout = () => {
-    navigate("/payment", { state: { total: totalAmount } });
-  };
+  navigate("/order-preview", {
+    state: {
+      cart,
+      subtotal: totalAmount
+    }
+  });
+};
+
 
   return (
     <div className="cart-page">

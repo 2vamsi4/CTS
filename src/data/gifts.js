@@ -234,11 +234,11 @@ export const gifts = [
     id: 9,
     name: "Personalized Mug",
     price: 18,
-     originalPrice: 30,          // ✅ required
+    originalPrice: 30,          // ✅ required
     rating: 4.7,                // ✅ required
     reviewsCount: 1284, 
     description:
-      "Delicious and freshly baked birthday cake made with premium ingredients. Perfect for celebrating special moments with your loved ones.",
+"Delicious and freshly baked birthday cake made with premium ingredients. Perfect for celebrating special moments with your loved ones.",
     
     instructions:
       "Store the cake in a cool place. Consume within 24 hours. For best taste, refrigerate and bring to room temperature before serving.",
